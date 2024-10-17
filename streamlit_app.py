@@ -231,7 +231,7 @@ elif option == "Stroke_Prediction":
         # Display the results
         st.write("Prediction:", "Stroke" if prediction[0] == 1 else "No Stroke")
         accuracy=stroke_prob * 100 
-        st.title("Model Prediction Accuracy")
+        st.title("The percentage of your chance of having a stroke")
 
         # إنشاء شريط الـ Gauge باستخدام Plotly
         fig = go.Figure(go.Indicator(
