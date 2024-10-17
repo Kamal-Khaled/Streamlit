@@ -268,7 +268,7 @@ elif option == "Meet Our Team":
     st.markdown("<h3>Our Team Members</h3>", unsafe_allow_html=True)
     team_members = [
         {"name": "Mahmoud Ahmed", "linkedin": "https://www.linkedin.com/in/mahmoud-ahmed-22505527a"},
-        {"name": "Mohamed ", "linkedin": "https://www.linkedin.com/in/mohamed-foda-1932602b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"},
+        {"name": "Mohamed Fouda", "linkedin": "https://www.linkedin.com/in/mohamed-foda-1932602b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"},
         {"name": "Nada Mohamed", "linkedin": "http://linkedin.com/in/nada-alfeky-3397b328a"},
         {"name": "Kamal Khaled", "linkedin": "https://www.linkedin.com/in/kamal-khaled-2a9096282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
         {"name": "Weam Taie", "linkedin": "https://www.linkedin.com/in/weam-taie-548535218/"},
