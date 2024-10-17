@@ -127,7 +127,7 @@ if option == "Streamlit_App":
         # Expander for Presentation
         with st.expander("Presentation"):
             st.subheader("Presentation Overview")
-            st.markdown("[View Presentation](https://app.powerbi.com/links/Vg4be6DfcC?ctid=4b6778d7-95aa-4bc6-9b34-f2e341791192&pbi_source=linkShare)")
+            st.markdown("[View Presentation](https://drive.google.com/file/d/1spQG2dCYfxpPuxM8Si3nLdZVNqJlObEM/view?usp=sharing)")
 
 
         # Content for Dashboard tab
