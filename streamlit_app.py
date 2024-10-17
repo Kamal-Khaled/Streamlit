@@ -203,11 +203,11 @@ elif option == "Stroke_Prediction":
     hypertension = st.selectbox('Hypertension', [0, 1])
     heart_disease = st.selectbox('Heart Disease', [0, 1])
     ever_married = st.selectbox('Ever Married', ['Yes', 'No'])
-    work_type = st.selectbox('Work Type', ['Private', 'Self-employed', 'Govt_job', 'Children'])
+    work_type = st.selectbox('Work Type', ['Private', 'Self-employed', 'Govt_job'])
     residence_type = st.selectbox('Residence Type', ['Urban', 'Rural'])
     avg_glucose_level = st.number_input('Average Glucose Level', value=0.0, format="%.1f")
     bmi = st.number_input('BMI', value=0.0, format="%.1f")
-    smoking_status = st.selectbox('Smoking Status', ['formerly smoked', 'never smoked', 'smokes', 'Unknown'])
+    smoking_status = st.selectbox('Smoking Status', ['formerly smoked', 'never smoked', 'smokes'])
 
     # ترميز الفئة العمرية
     age = st.selectbox('Age', ['Child: 0-18', 'Adult: 19-45', 'Senior: 46-60', 'Elderly: 61-100'])
