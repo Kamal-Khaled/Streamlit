@@ -1,0 +1,12 @@
+Pandas
+NumPy
+SciPy 
+Matplotlib
+Seaborn
+Scikit-learn
+TensorFlow
+importnb
+joblib
+plotly
+imblearn
+xgboost
