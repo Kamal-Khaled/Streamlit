@@ -192,13 +192,13 @@ elif option == "Stroke_Prediction":
     ''')
 
 
-    # تحميل النموذج
+    # 
     model = joblib.load('ML_Model_For_Stroke_predection.pkl')
 
-    # تعيين عنوان التطبيق
+    # 
     st.title('Machine Learning Model Predictor')
 
-    # إنشاء حقول إدخال للميزات
+    # 
     gender = st.selectbox('Gender', ['Male', 'Female'])
     hypertension = st.selectbox('Hypertension', [0, 1])
     heart_disease = st.selectbox('Heart Disease', [0, 1])
@@ -209,10 +209,10 @@ elif option == "Stroke_Prediction":
     bmi = st.number_input('BMI', value=0.0, format="%.1f")
     smoking_status = st.selectbox('Smoking Status', ['formerly smoked', 'never smoked', 'smokes'])
 
-    # ترميز الفئة العمرية
+    # 
     age = st.selectbox('Age', ['Child: 0-18', 'Adult: 19-45', 'Senior: 46-60', 'Elderly: 61-100'])
 
-    # جمع البيانات المدخلة في DataFrame
+    # 
     input_data = pd.DataFrame([[str(gender), int(hypertension), int(heart_disease), str(ever_married),
                              str(work_type), str(residence_type), float(avg_glucose_level),
                              float(bmi), str(smoking_status), str(age)]],
@@ -220,7 +220,7 @@ elif option == "Stroke_Prediction":
                                    'work_type', 'Residence_type', 'avg_glucose_level',
                                    'bmi', 'smoking_status', 'age'])
 
-    # طباعة بيانات الإدخال لأغراض التصحيح
+    # 
     st.write("Input Data:", input_data)
 
     if st.button('Predict'):
@@ -233,7 +233,7 @@ elif option == "Stroke_Prediction":
         accuracy=stroke_prob * 100 
         st.title("The percentage of your chance of having a stroke")
 
-        # إنشاء شريط الـ Gauge باستخدام Plotly
+        
         fig = go.Figure(go.Indicator(
             mode="gauge+number",
             value=accuracy,
@@ -252,7 +252,7 @@ elif option == "Stroke_Prediction":
              }
         ))
 
-    # عرض الرسم في Streamlit
+
         st.plotly_chart(fig)
 
 
